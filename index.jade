@@ -25,7 +25,7 @@ html
             .row
                 .col-md-3
                     .bs-sidebar
-                        ul.nav.bs-sidenav
+                        ul.nav.bs-sidenav.affix
                             li
                                 a(href="#assistente") Assistente di Viaggio 
                             li
@@ -62,7 +62,7 @@ html
                             * informazioni da atm (tweet di atm)
                             * informazioni da altri utenti (tramite tweet)
                             * propria posizione (quante fermate mancano)
-                    h2 Assistente di viaggio
+                    h2(id="assistente") Assistente di viaggio
                     p.
                     :markdown
                         I trip planner (tipo Google Transit) offrono, come
@@ -92,8 +92,10 @@ html
                         the name says it all
 
                     h2 Screenshot
-                      
+                    a.img-thumbnail(href="imgs/Screenshot_1.png")
+                        img(src="imgs/Screenshot_1.png",width="20%")  
                     h2 Video
                     h2 Applicazione
+                    a(href="apk/S_moka.apk") Scarica
 
                         
