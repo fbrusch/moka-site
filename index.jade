@@ -15,12 +15,7 @@ html
                     a.navbar-brand(href="#") Moka
                 .collapse.navbar-collapse
                     ul.nav.navbar-nav
-                        li 
-                            a Ciao
-                        li 
-                            a A 
-                        li 
-                            a Tutti
+
         // side navbar
         .container
             .row
@@ -31,12 +26,12 @@ html
                                 a(href="#assistente") Assistente di Viaggio 
                             li
                                 a(href="#localizzaione") Localizzazione
-                            li 
-                                a(href="#potenzialita-social") Potenzialità Social
+                            //-li 
+                                //-a(href="#potenzialita-social") Potenzialità Social
                             li
                                 a(href="#screenshot") Screenshot
-                            li
-                                a(href="#video") Video
+                            //-li
+                                //-a(href="#video") Video
                             li
                                 a(href="#download") Download
 
@@ -62,7 +57,7 @@ html
                             * informazioni da ATM (per esempio, i tweet di ATM)
                             * informazioni da altri utenti (ad esempio, tramite tweet)
                             * posizione attuale dell'utente (per calcolare, ad esempio, quante fermate mancano alla destinazione)
-                    h2(id="assistente") Assistente di viaggio
+                    h3(id="assistente") Assistente di viaggio
                     p.
                     :markdown
                         I comuni trip planner (tipo Google Transit) offrono, come
@@ -74,7 +69,7 @@ html
                         Assistant, ovvero un'applicazione che continua a fornire
                         informazioni utili durante tutto il viaggio.
 
-                    h2 Localizzazione
+                    h3(id="localizzazione") Localizzazione
                     :markdown
                         MOKA, per fornire le informazioni necessarie ad
                         assistere l'utente durante tutto il suo viaggio, cerca di capire su quale
@@ -85,16 +80,26 @@ html
 
 
 
-                    h2 Potenzialità social
-                    p.
-                        Sfruttando il vantaggio dato dalla conoscenza del mezzo (lo specifico veicolo, non la linea) sul quale si trova l'utente, MOKA è in grado di abilitare numerose attività social. Ad esempio, è possibile sapere se sullo stesso mezzo su cui si trova l'utente sono presenti dei suoi amici di FaceBook, oppure qualcuno col quale l'utente ha recentemente giocato a Ruzzle!
-                        Queste informazioni possono essere sfruttate anche per consigliare all'utente itinerari alternativi che gli consentano, nonostante non siano magari ottimizzati dal punto di vista del numero di cambi o della lunghezza del viaggio, di incontrare uno o più amici e di percorrere con loro parte del suo viaggio.
+                    //-h2 Potenzialità social
+                    //-p.
+                        //-Sfruttando il vantaggio dato dalla conoscenza del mezzo (lo specifico veicolo, non la linea) sul quale si trova l'utente, MOKA è in grado di abilitare numerose attività social. Ad esempio, è possibile sapere se sullo stesso mezzo su cui si trova l'utente sono presenti dei suoi amici di FaceBook, oppure qualcuno col quale l'utente ha recentemente giocato a Ruzzle!
+                        //-Queste informazioni possono essere sfruttate anche per consigliare all'utente itinerari alternativi che gli consentano, nonostante non siano magari ottimizzati dal punto di vista del numero di cambi o della lunghezza del viaggio, di incontrare uno o più amici e di percorrere con loro parte del suo viaggio.
 
-                    h2 Screenshot
-                    a.img-thumbnail(href="imgs/Screenshot_1.png", width="20%")
+                    h2(id="screenshot") Screenshot
+                    a.img(href="imgs/Screenshot_1.png", width="20%")
                         img(src="imgs/Screenshot_1.png",width="20%")  
-                    h2 Video
-                    h2 Applicazione
-                    a(href="apk/moka.apk") Scarica
+                    a.img(href="imgs/Screenshot_2.png", width="20%")
+                        img(src="imgs/Screenshot_2.png",width="20%")  
+                    a.img(href="imgs/Screenshot_3.png", width="20%")
+                        img(src="imgs/Screenshot_3.png",width="20%")  
+                    a.img(href="imgs/Screenshot_4.png", width="20%")
+                        img(src="imgs/Screenshot_4.png",width="20%")  
+                    //-h2 Video
+                        
+                    h2 Download 
+                    a(href="apk/moka.apk") moka.apk
+                    span &nbsp; (per Android >=4)
+
+                    div(style="height:100px")
 
                         
