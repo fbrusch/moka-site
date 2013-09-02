@@ -1,5 +1,7 @@
-*.swp
 index.html
 app/
 node_modules/
 bower_components/
+.DS_Store
+*.swp
+*.swo
