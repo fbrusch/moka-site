@@ -20,7 +20,7 @@ html
         .container
             .row
                 .col-md-3
-                    .bs-sidebar.affix-top
+                    .bs-sidebar.affix.affix-top(role="complementary")
                         ul.nav.bs-sidenav
                             li
                                 a(href="#assistente") Assistente di Viaggio 
@@ -59,7 +59,8 @@ html
                             li informazioni da ATM (per esempio, i tweet di ATM)
                             li informazioni da altri utenti (ad esempio, tramite tweet)
                             li posizione attuale dell'utente (per calcolare, ad esempio, quante fermate mancano alla destinazione)
-                    h3(id="assistente") Assistente di viaggio
+                    .page-header
+                        h3(id="assistente") Assistente di viaggio
                     p
                         | I servizi di 
                         i trip planning 
@@ -73,8 +74,8 @@ html
                         b Travel Assistant
                         |, ovvero servizio che continua a fornire
                         | informazioni utili durante tutto il viaggio.
-
-                    h3(id="localizzazione") Localizzazione
+                    .page-header
+                        h3(id="localizzazione") Localizzazione
                     p
                         | MOKA per fornire le informazioni necessarie ad
                         | assistere l'utente durante tutto il suo viaggio, cerca di capire su quale
@@ -91,28 +92,30 @@ html
                     //-p.
                         //-Sfruttando il vantaggio dato dalla conoscenza del mezzo (lo specifico veicolo, non la linea) sul quale si trova l'utente, MOKA è in grado di abilitare numerose attività social. Ad esempio, è possibile sapere se sullo stesso mezzo su cui si trova l'utente sono presenti dei suoi amici di FaceBook, oppure qualcuno col quale l'utente ha recentemente giocato a Ruzzle!
                         //-Queste informazioni possono essere sfruttate anche per consigliare all'utente itinerari alternativi che gli consentano, nonostante non siano magari ottimizzati dal punto di vista del numero di cambi o della lunghezza del viaggio, di incontrare uno o più amici e di percorrere con loro parte del suo viaggio.
-
-                    h2(id="screenshot") Screenshot
+                    .page-header
+                        h2(id="screenshot") Screenshot
                     div.col-xs-2.col-md-3
-                        a.img(href="imgs/Screenshot_1.png", width="80%")
-                            img(src="imgs/Screenshot_1.png",width="80%")  
+                        a.img(href="imgs/Screenshot_1.png", width="100%")
+                            img(src="imgs/Screenshot_1.png",width="100%")  
                     div.col-xs-2.col-md-3
-                        a.img(href="imgs/Screenshot_2.png", width="80%")
-                            img(src="imgs/Screenshot_2.png",width="80%")  
+                        a.img(href="imgs/Screenshot_2.png", width="100%")
+                            img(src="imgs/Screenshot_2.png",width="100%")  
                     div.col-xs-2.col-md-3
-                        a.img(href="imgs/Screenshot_3.png", width="80%")
-                            img(src="imgs/Screenshot_3.png",width="80%")  
+                        a.img(href="imgs/Screenshot_3.png", width="100%")
+                            img(src="imgs/Screenshot_3.png",width="100%")  
                     div.col-xs-2.col-md-3
-                        a.img(href="imgs/Screenshot_4.png", width="80%")
-                            img(src="imgs/Screenshot_4.png",width="80%")  
+                        a.img(href="imgs/Screenshot_4.png", width="100%")
+                            img(src="imgs/Screenshot_4.png",width="100%")  
                     .clearfix
-                    h2 Video
+                    .page-header
+                        h2 Video
                     p.
                         <iframe src="//player.vimeo.com/video/73584461" width="500" height="281"
                         frameborder="0" webkitallowfullscreen mozallowfullscreen
                         allowfullscreen></iframe> 
 
-                    h2 Dati
+                    .page-header
+                        h2 Dati
                     :markdown
                         Moka utilizza il dataset del trasporto pubblico locale
                         pubblicato su [http://dati.comune.milano.it/]. Ad
@@ -120,7 +123,8 @@ html
                         al 1/9/2013. Non appena verrano pubblicati dati più
                         aggiornati, questi verranno importati in Moka.
                         
-                    h2 Download 
+                    .page-header
+                        h2 Download 
                     a(href="apk/moka.apk") moka.apk
                     span &nbsp; (per Android >=4)
 
