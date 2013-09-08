@@ -14,7 +14,9 @@ html
         .navbar.navbar-inverse.navbar-fixed-top
             .container
                 .navbar-header
-                    a.navbar-brand(href="#") Moka
+                    a.navbar-brand(href="#")
+                        img(src="assets/images/moka_header.png",height="35px",style="padding-left:10px") 
+                        //-span(style="padding-left:5px") Moka
                 .collapse.navbar-collapse
                     ul.nav.navbar-nav
 
@@ -36,13 +38,15 @@ html
                                 //-a(href="#video") Video
                             li
                                 a(href="#download") Download
+                            li
+                                a(href="#chi_siamo") Chi siamo
 
 
 
                 // contenuto principale
                 .col-md-6
                     
-                    h2 MOKA_Beta
+                    h2 MOKA (Beta)
                     p.lead.
                         MOKA è un Travel Assistant sperimentale per gli spostamenti con
                         il trasporto pubblico di Milano.
@@ -61,6 +65,12 @@ html
                             li informazioni da ATM (per esempio, i tweet di ATM)
                             li informazioni da altri utenti (ad esempio, tramite tweet)
                             li posizione attuale dell'utente (per calcolare, ad esempio, quante fermate mancano alla destinazione)
+                    p.lead 
+                        | Scarica l'ultima versione 
+                        span
+                            a(href="apk/moka.apk") 
+                                img(src="assets/images/moka_logo.png",height="40px")
+                        span (pacchetto apk per Android >=4)
                     .page-header
                         h3(id="assistente") Assistente di viaggio
                     p
@@ -80,13 +90,23 @@ html
                         h3(id="localizzazione") Localizzazione
                     p
                         | MOKA per fornire le informazioni necessarie ad
-                        | assistere l'utente durante tutto il suo viaggio, cerca di capire su quale
-                        | mezzo si trova l'utente, incrociando i dati sulla
+                        | assistere l'utente durante tutto il suo viaggio, cerca di capire 
+                        i su quale mezzo 
+                        | si trova l'utente, incrociando i dati sulla
                         | posizione geografica con quelli sulla posizione dei
                         | mezzi.
-                    p.lead 
-                        | Questo è molto diverso dal conoscere
-                        | semplicemente la posizione geografica dell'utente.
+                    .page-header
+                        h2 Dati
+                    :markdown
+                        Moka utilizza il dataset del trasporto pubblico locale
+                        pubblicato su [http://dati.comune.milano.it/]. Ad
+                        oggi i dati presenti sul sito coprono il servizio fino
+                        al 1/9/2013. Non appena verrano pubblicati dati più
+                        aggiornati, questi verranno importati in Moka.
+
+                    //-p.lead 
+                        //-| Questo è molto diverso dal conoscere
+                        //-| semplicemente la posizione geografica dell'utente.
 
 
 
@@ -116,19 +136,23 @@ html
                         frameborder="0" webkitallowfullscreen mozallowfullscreen
                         allowfullscreen></iframe> 
 
-                    .page-header
-                        h2 Dati
-                    :markdown
-                        Moka utilizza il dataset del trasporto pubblico locale
-                        pubblicato su [http://dati.comune.milano.it/]. Ad
-                        oggi i dati presenti sul sito coprono il servizio fino
-                        al 1/9/2013. Non appena verrano pubblicati dati più
-                        aggiornati, questi verranno importati in Moka.
                         
                     .page-header
                         h2 Download 
-                    a(href="apk/moka.apk") moka.apk
-                    span &nbsp; (per Android >=4)
+                    p 
+                        | Scarica l'ultima versione (pacchetto apk per Android >=4)
+                        span
+                            a(href="apk/moka.apk") 
+                                img(src="assets/images/moka_logo.png",height="40px")
+                    //-span &nbsp; (per Android >=4)
+
+                    p.page-header(id="chi_siamo")
+                        h2 Chi siamo
+                    p
+                        | Moka è sviluppata nel contesto di un progetto
+                        | del Politecnico di Milano che ha come
+                        | obiettivo lo ricerca nel campo della mobilità
+                        | sostenibile urbana, in particolare a Milano. 
 
                     div(style="height:100px")
 
